@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <>
       <div className="divisor-container pt-40">
-        <h1 className="divisor-word mr-5">Ux Boards</h1>
+        <h1 className="divisor-word ">Ux Boards</h1>
       </div>
       <footer className="pt-7">
-        <section aria-label="Site Footer" className="  text-black">
-          <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
+        <section aria-label="Site Footer" className="footer-body  text-black">
+          <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8 footer-body">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 text-center">
               <div className="footer-subcontainer">
                 <NavLink to="/">

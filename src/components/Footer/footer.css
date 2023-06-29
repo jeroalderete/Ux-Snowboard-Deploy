@@ -108,4 +108,26 @@ span {
     .copyrights {
         text-align: center;
     }
+
+
+    .divisor-word:before {
+        position: absolute;
+        left: 165px;
+    }
+
+    .divisor-word:after {
+
+        position: absolute;
+        right: 165px;
+
+    }
+
+    .divisor-container {
+        padding: 0;
+    }
+
+    .footer-body {
+        padding: 20px;
+    }
+
 }

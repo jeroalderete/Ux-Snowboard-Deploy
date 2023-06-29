@@ -131,7 +131,7 @@ const Navbar = () => {
             >
               <span className="sr-only">Abrir Menu</span>
               <HiOutlineMenu
-                className="text-primario-700 h-6 w-6"
+                className="text-primario-700 h-6 w-6 ml-5"
                 aria-hidden="true"
               />
             </button>
