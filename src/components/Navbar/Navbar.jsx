@@ -265,7 +265,7 @@ const Navbar = () => {
                       CONTACTO
                     </NavLink>
                     <NavLink
-                      to={"/cart"}
+                      to={"/contacto"}
                       className="-mx-3 flex rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 uppercase"
                     >
                       CARRITO

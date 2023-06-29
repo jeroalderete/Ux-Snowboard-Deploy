@@ -1,0 +1,9 @@
+@media only screen and (max-width: 700px) {
+
+    .detail-mobile {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+}

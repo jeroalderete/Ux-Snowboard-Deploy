@@ -1,5 +1,6 @@
 import { AiTwotoneStar } from "react-icons/ai";
 import { useCartContext } from "../../Context/CartContext";
+import "./ItemDetail.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,7 +19,7 @@ export default function ItemDetail({ detalles }) {
   return (
     <div className="pt-20 bg-slate-100 from-primario-200 to-primario-100">
       <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] ">
-        <div className="  max-w-2xl row-span-2 lg:row-span-3 lg:col-span-1">
+        <div className="  max-w-2xl row-span-2 lg:row-span-3 lg:col-span-1 detail-mobile">
           <img src={imagen} alt={nombre} className="w-50 h-50 object-cover " />
         </div>
         <div className="lg:col-span-2 pl-4 ">

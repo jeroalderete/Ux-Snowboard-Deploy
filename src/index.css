@@ -6,6 +6,11 @@
 
 /* HEADER */
 
+#root {
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
 .header {
   height: 20vh;
 }
@@ -254,7 +259,7 @@ q:after {
 /* FONTS  */
 
 .font-primary {
-  font-family:  Arial, Tahoma, sans-serif;
+  font-family: Arial, Tahoma, sans-serif;
 }
 
 .font-secondary {

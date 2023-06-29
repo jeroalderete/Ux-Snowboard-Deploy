@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="divisor-container pt-40">
-        <h1 className="divisor-word">Ux Boards</h1>
+        <h1 className="divisor-word mr-5">Ux Boards</h1>
       </div>
       <footer className="pt-7">
         <section aria-label="Site Footer" className="  text-black">
