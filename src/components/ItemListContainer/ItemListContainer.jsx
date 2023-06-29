@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
-import "./ItemListContainer.css";
+import "./itemListContainer.css";
 import HeroImage from "../HeroImage/HeroImage";
 import { PuffLoader } from "react-spinners";
 import { useProdContext } from "../../Context/ProdContext";
 import Title from "../Title/Title";
-
 
 export default function ItemListContainer({ category, isRoute }) {
   const { productos, filtroCategoria, AllProducts } = useProdContext();
@@ -21,7 +20,6 @@ export default function ItemListContainer({ category, isRoute }) {
     <main className="from-primario-200 to-primario-100 container-fluid pb-40 pt-40  product-container">
       {productos.length != 0 ? (
         <>
-         
           <ItemList productos={productos} />
         </>
       ) : (
