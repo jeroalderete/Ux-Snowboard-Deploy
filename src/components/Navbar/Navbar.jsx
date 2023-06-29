@@ -264,6 +264,12 @@ const Navbar = () => {
                     >
                       CONTACTO
                     </NavLink>
+                    <NavLink
+                      to={"/cart"}
+                      className="-mx-3 flex rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 uppercase"
+                    >
+                      CARRITO
+                    </NavLink>
 
                     <Menu as="div" className="w-full inline-block text-left">
                       <div className="w-full ">
