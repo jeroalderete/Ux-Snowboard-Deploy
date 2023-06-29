@@ -9,7 +9,7 @@ import {
   HiUserCircle,
   HiMinusSm,
 } from "react-icons/hi";
-import { GiClothes } from "react-icons/gi";
+import { GiSnowboard } from "react-icons/gi";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 import { ImWhatsapp } from "react-icons/im";
 import { NavLink, Link } from "react-router-dom";
@@ -265,7 +265,7 @@ const Navbar = () => {
                       CONTACTO
                     </NavLink>
                     <NavLink
-                      to={"/contacto"}
+                      to={"/cart"}
                       className="-mx-3 flex rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 uppercase"
                     >
                       CARRITO
@@ -274,7 +274,7 @@ const Navbar = () => {
                     <Menu as="div" className="w-full inline-block text-left">
                       <div className="w-full ">
                         <Menu.Button className="w-full py-3 rounded-lg inline-flex text-base font-semibold leading-7 text-gray-900 uppercase">
-                          <GiClothes className="text-primario-700 h-6 w-6 mr-2" />{" "}
+                          <GiSnowboard className="text-primario-700 h-6 w-6 mr-2" />{" "}
                           <NavLink
                             to={"/"}
                             className="-mx-3 flex rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 uppercase"
@@ -283,44 +283,6 @@ const Navbar = () => {
                           </NavLink>
                         </Menu.Button>
                       </div>
-                      <Transition
-                        as={Fragment}
-                        enter="transition ease-out duration-100"
-                        enterFrom="transform opacity-0 scale-95"
-                        enterTo="transform opacity-100 scale-100"
-                        leave="transition ease-in duration-75"
-                        leaveFrom="transform opacity-100 scale-100"
-                        leaveTo="transform opacity-0 scale-95"
-                      >
-                        <Menu.Items className=" w-56 origin-top-right divide-y divide-gray-400 rounded-md bg-transparent shadow-lg ring-2 ring-black ring-opacity-10 focus:outline-none">
-                          {categorias.map((ropa) => {
-                            return (
-                              <div
-                                key={ropa.key}
-                                id={ropa.id}
-                                className="px-1 py-1 "
-                              >
-                                <Menu.Item>
-                                  {({ active }) => (
-                                    <NavLink to={`/category/${ropa.nombre}`}>
-                                      <button
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className={`${
-                                          active
-                                            ? "bg-primario-500 text-white"
-                                            : "text-gray-900"
-                                        } group flex w-full items-center rounded-md px-2 py-2 text-sm uppercase`}
-                                      >
-                                        {ropa.nombre}
-                                      </button>
-                                    </NavLink>
-                                  )}
-                                </Menu.Item>
-                              </div>
-                            );
-                          })}
-                        </Menu.Items>
-                      </Transition>
                     </Menu>
                   </div>
                   <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -338,12 +300,6 @@ const Navbar = () => {
                 </div>
               </div>
             </div>{" "}
-            <a
-              href="#"
-              className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
-            >
-              Log in gz
-            </a>
           </Dialog.Panel>
         </Dialog>
       </div>

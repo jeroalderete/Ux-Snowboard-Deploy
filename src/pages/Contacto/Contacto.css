@@ -157,7 +157,12 @@ input {
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 820px) {
+
+    .wrapper2 {
+        padding-top: 120px !important;
+    }
+
     .card-grp {
         flex-direction: column;
     }
