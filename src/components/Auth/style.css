@@ -1,0 +1,7 @@
+span {
+    background-color: transparent !important;
+}
+
+.button-hover:hover {
+    background-color: rgb(60, 59, 59) !important;
+}
