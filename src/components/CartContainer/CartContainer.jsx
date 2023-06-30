@@ -6,7 +6,7 @@ import { useCartContext } from "../../Context/CartContext";
 function CartContainer() {
   const { carrito } = useCartContext();
   return (
-    <main className="bg-gradient-to-b from-primario-200 to-primario-100 container-fluid pb-8 pt-16 lg:pt-32 flex-grow">
+    <main className="bg-slate-100 from-primario-200 to-primario-100 container-fluid pb-8 pt-16 lg:pt-32 flex-grow">
       {carrito.length != 0 ? (
         <CartList productos={carrito} btn={"show"} />
       ) : (

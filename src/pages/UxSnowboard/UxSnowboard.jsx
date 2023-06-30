@@ -4,9 +4,10 @@ import "../Eventos/normalize.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { CartContextProvider } from "../../Context/CartContext";
-import { motion } from "framer-motion";
 
+import HeroSection from "../../components/HeroSection/HeroSection";
 import { ProdContextProvider } from "../../Context/ProdContext";
+import HeroImage from "../../components/HeroImage/HeroImage";
 
 const UxSnowboard = () => {
   return (
@@ -14,47 +15,10 @@ const UxSnowboard = () => {
       <ProdContextProvider>
         <CartContextProvider>
           <Navbar />
-          <div className="new-container pb-10 ">
-            <div className="font-bold sm:text-[1.875rem] text-[1.5rem]  text-center pt-20">
-              <span className="subtitle font-primar pt-40">vivi una</span>
-              <span className="title font-secondary text-Teal pt-5 pb-5">
-                Experiencia Unica
-              </span>
-            </div>
-            <div className="text-sm lg:text-center text-gray leading-7 mb-4 text-center">
-              <p className="font-tertiary text-default-grey">
-                Una de las grandes cualidades sobre el deporte del Snowboard es
-                que solo necesitas 3 cosas. <span></span> Tu cuerpo, una tabla y
-                una montaña.
-              </p>
-            </div>
-          </div>
-          <div className="new-container " id="about">
-            <div className="grid md:grid-cols-1 place-items-center">
-              <div className="border-[3px] border-solid border-Teal rounded-lg ">
-                <img
-                  className="p-4"
-                  src="https://i.ibb.co/FYC1hGZ/snow3.jpg"
-                  alt="persona saltando en snowboard"
-                />
-              </div>
 
-              <div className="quote">
-                <q className="quote__content font-secondary">
-                  Ux Snowboard proporciona la ultima tecnologia en sus
-                  productos. <br></br>
-                  Expertos en fibra de carbono brindamos las mejores tablas de
-                  snowboard para los grandes competidores. <span></span>{" "}
-                  <span></span> Es una eleccion en el paraiso.
-                </q>
-                <span className="quote__author font-primary">
-                  Shaun UxerGham White
-                </span>
-              </div>
-            </div>
-          </div>
+          <HeroSection />
 
-          <div>
+          <div className="second-text-intro pt-40">
             <div className="section pb-20" id="teacher">
               <div className="grid sm:grid-cols-2 place-items-center gap-8">
                 <div className="pl-5 text-mob">
@@ -182,7 +146,7 @@ const UxSnowboard = () => {
               </div>
             </div>
             <div className="section new-container" id="about">
-              <div className="grid md:grid-cols-2 gap-8 place-items-center">
+              <div className="grid md:grid-cols-2  gap-8 place-items-center">
                 <div className="border-[3px] border-solid border-Teal rounded-lg">
                   <img
                     className="p-4"
@@ -203,44 +167,10 @@ const UxSnowboard = () => {
               </div>
             </div>
 
-            <div
-              className="section pt-40 newsletter-container last-text-ux"
-              id="contact"
-            >
-              <div className="text-center max-w-[600px] mx-auto">
-                <div className="sm:text-3xl text-2xl font-bold mb-5">
-                  <h3 className="join__title font-secondary">
-                    Unite Al Movimiento
-                  </h3>
-                </div>
-                <div className="text-sm leading-7 text-gray">
-                  <p className="join__text font-tertiary">
-                    Ingresa tu e-mail y participa de nuestros descuentos y
-                    ultimos lanzamientos.
-                    <span></span>
-                    Ux snowboard es mas que un deporte , es un estilo de vida.
-                  </p>
-                </div>
-                <motion.form
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.3 }}
-                  className="mt-5"
-                >
-                  <input
-                    type="text"
-                    placeholder="Enter your email address"
-                    className="sm:p-3 p-2 outline-none text-sm shadow-md sm:w-72 w-60"
-                  />
-                  <button className="text-sm text-white bg-black sm:p-3 p-2 shadow-md font-bold">
-                    Subscribe
-                  </button>
-                </motion.form>
-              </div>
-            </div>
+            <HeroImage />
 
             <div className="section new-container" id="about">
-              <div className="grid md:grid-cols-2 gap-8 place-items-center">
+              <div className="grid md:grid-cols-2  gap-8 place-items-center">
                 <div className="border-[3px] border-solid border-Teal rounded-lg">
                   <img
                     className="p-4"

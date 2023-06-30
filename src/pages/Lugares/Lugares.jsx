@@ -18,7 +18,7 @@ const Lugares = () => {
             <main>
               <section className="primary-slider group d-lg-flex flex-lg-row justify-content-lg-center d-xl-flex justify-content-xl-end ">
                 <div className="primary-slider__content">
-                  <h1 className="primary-slider__title font-secondary">
+                  <h1 className="primary-slider__title font-secondary text-start">
                     Paraisos <span></span>{" "}
                   </h1>
                   <h2 className="display-1">Perfectos</h2>
